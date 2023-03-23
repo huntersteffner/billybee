@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Contact from './Contact'
 import Footer from './Footer'
 import Navbar from './Navbar'
 
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
       <div className="justify-center items-center">
         <div className="container mx-auto">{children}</div>
       </div>
+      <Contact/>
       <Footer />
     </>
   )

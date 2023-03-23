@@ -2,6 +2,8 @@ import { useState } from 'react'
 import CarouselItem from './CarouselItem'
 
 const Carousel = () => {
+
+    // https://github.com/harakisgeorge/carouselreact
   const [activeIndex, setActiveIndex] = useState(0)
   const items = [
     {
@@ -37,7 +39,7 @@ const Carousel = () => {
   }
   return (
     <>
-      <div className="carousel">
+      <div className="carousel mx-auto">
         <div
           className="inner"
           style={{ transform: `translate(-${activeIndex * 100}%)` }}
